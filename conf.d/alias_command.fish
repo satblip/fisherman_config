@@ -12,3 +12,8 @@ end
 function ut
   uptime
 end
+
+# Game Scraper
+function gameScraper
+  /Users/satblip/Downloads/scraper_mac_amd64/scraper -thumb_only -use_ovgdb -workers=5
+end

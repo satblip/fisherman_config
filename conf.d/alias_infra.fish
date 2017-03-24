@@ -5,5 +5,5 @@ end
 
 # Haproxy Update
 function haproxy_update
-  ansible-playbook saga_cluster.yml --limit haproxy -i ./inventory/saga-aws -vvvv --ask-vault --tags haproxy_config
+  ansible-playbook saga_cluster.yml --limit haproxy -i ./inventory/saga-aws --ask-vault --tags haproxy_config
 end
