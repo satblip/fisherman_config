@@ -7,7 +7,6 @@ set -x MONGODBURL localhost
 # Node Env
 set -x NODE_ENV development
 set -x NODE_PATH "$HOME/.npm/lib/node_modules"
-set node_bin_path "$HOME/.npm/bin"
 
 # Default Path
 set default_path /usr/bin /usr/sbin /bin /sbin
@@ -16,4 +15,4 @@ set default_path /usr/bin /usr/sbin /bin /sbin
 set homebrew /usr/local/bin
 
 # Set All Paths
-set -gx PATH $homebrew $default_path $node_bin_path
+set -gx PATH $homebrew $default_path
