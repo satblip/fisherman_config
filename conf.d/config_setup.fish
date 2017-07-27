@@ -14,5 +14,8 @@ set default_path /usr/bin /usr/sbin /bin /sbin
 # Brew path
 set homebrew /usr/local/bin
 
+# PIO path
+set piopath /Users/satblip/.platformio/penv/bin
+
 # Set All Paths
-set -gx PATH $homebrew $default_path
+set -gx PATH $homebrew $piopath $default_path
