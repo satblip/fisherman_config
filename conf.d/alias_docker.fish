@@ -1,7 +1,7 @@
 # Docker cleanup
 function dockercleanup
   docker rm (docker ps -a -q)
-  docker volume rm (docker volume ls -qf dangling=true)
+  docker volume prune -f
   docker rmi (docker images -q -f dangling=true)
 end
 
