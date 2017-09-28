@@ -17,5 +17,8 @@ set homebrew /usr/local/bin
 # PIO path
 set piopath /Users/satblip/.platformio/penv/bin
 
+# XC8 path
+set xc8path /Applications/microchip/xc8/v1.43/bin
+
 # Set All Paths
-set -gx PATH $homebrew $piopath $default_path
+set -gx PATH $homebrew $piopath $xc8path $default_path
