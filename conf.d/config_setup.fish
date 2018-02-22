@@ -20,5 +20,10 @@ set piopath /Users/satblip/.platformio/penv/bin
 # XC8 path
 set xc8path /Applications/microchip/xc8/v1.43/bin
 
+# mos path
+set mospath /Users/satblip/.mos/bin
+
+set pip3path /Users/satblip/Library/Python/3.6/bin
+
 # Set All Paths
-set -gx PATH $homebrew $piopath $xc8path $default_path
+set -gx PATH $homebrew $piopath $xc8path $mospath $pip3path $default_path
