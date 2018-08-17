@@ -5,7 +5,6 @@ set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 set -x MONGODBURL localhost
 
 # Node Env
-set -x NODE_ENV development
 set -x NODE_PATH "$HOME/.npm/lib/node_modules"
 
 # Default Path
