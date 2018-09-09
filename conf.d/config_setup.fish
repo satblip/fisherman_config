@@ -24,5 +24,8 @@ set mospath /Users/satblip/.mos/bin
 
 set pip3path /Users/satblip/Library/Python/3.6/bin
 
+set gnu1path /usr/local/opt/gnu-getopt/bin
+set gnu2path /usr/local/opt/coreutils/libexec/gnubin
+
 # Set All Paths
-set -gx PATH $homebrew $piopath $xc8path $mospath $pip3path $default_path
+set -gx PATH $homebrew $piopath $xc8path $mospath $pip3path $gnu1path $gnu2path $default_path
