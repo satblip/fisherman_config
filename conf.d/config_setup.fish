@@ -16,8 +16,14 @@ set homebrew /usr/local/bin
 # PIO path
 set piopath /Users/satblip/.platformio/penv/bin
 
-# # XC8 path
-# set xc8path /Applications/microchip/xc8/v1.43/bin
+# XC8 path
+set xc8path /Applications/microchip/xc8/v2.00/bin/
+
+# XC16 path
+set xc16path /Applications/microchip/xc16/v1.35/bin/
+
+# XC32 path
+set xc32path /Applications/microchip/xc32/v2.10/bin/
 
 # # mos path
 # set mospath /Users/satblip/.mos/bin
@@ -28,4 +34,4 @@ set piopath /Users/satblip/.platformio/penv/bin
 # set gnu2path /usr/local/opt/coreutils/libexec/gnubin
 
 # Set All Paths
-set -gx PATH $homebrew $piopath $xc8path $mospath $pip3path $gnu1path $gnu2path $default_path
+set -gx PATH $homebrew $piopath $xc8path $xc16path $xc32path $default_path
