@@ -1,9 +1,4 @@
-# sagaws
-function sagaws
-  ssh -i ~/.ssh/saga-mesos.pem ubuntu@10.0.$argv
-end
-
-# Haproxy Update
-function haproxy_update
-  ansible-playbook saga_cluster.yml --limit haproxy -i ./inventory/saga-aws --ask-vault --tags haproxy_config
+# checkdns
+function checkdns
+  dig @(dig @8.8.8.8 $argv ns +short | head -n1) $argv ANY +noall +answer;
 end

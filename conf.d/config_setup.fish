@@ -1,6 +1,5 @@
 # Java
-set -x JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
-
+set -x JAVA_HOME /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 # MongoDB
 set -x MONGODBURL localhost
 
@@ -25,13 +24,11 @@ set xc16path /Applications/microchip/xc16/v1.35/bin/
 # XC32 path
 set xc32path /Applications/microchip/xc32/v2.10/bin/
 
-# # mos path
-# set mospath /Users/satblip/.mos/bin
+# Flutter path
+set flutterpath /Users/satblip/flutter/bin/
 
-# set pip3path /Users/satblip/Library/Python/3.6/bin
-
-# set gnu1path /usr/local/opt/gnu-getopt/bin
-# set gnu2path /usr/local/opt/coreutils/libexec/gnubin
+# Ansible 2.8
+set ansiblepath "/usr/local/opt/ansible@2.8/bin"
 
 # Set All Paths
-set -gx PATH $homebrew $piopath $xc8path $xc16path $xc32path $default_path
+set -gx PATH $piopath $xc8path $xc16path $xc32path $flutterpath $ansiblepath $homebrew $default_path
